@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head> TORQUE CALCULATION
+
+
+<style type="text/css">
+	body {
+	margin: 100px;
+	text-align: center;
+	color: magenta;
+    
+		}
+</style>
+</head>
+<body>
+<form>
+	<p>
+
+	Distance    <input type="text"id="firstNumber" size="25"/><br>
+</p>
+
+	Force<input type="text"id="secondNumber"size="25"  />
+<p>
+	Angle sin( )<input type="text"id="thirdNumber" size="25"/><br>
+</p>
+<p>
+	<input type="button"onClick="multiplyBy()"Value="CALCULATE" style="color:blue"/><br>
+</p>
+</form>
+<p>The TORQUE is : <br>
+<span id = "result"></span>
+</p>
+<script>
+	function multiplyBy()
+	{
+	num1 = document.getElementById("firstNumber").value;
+	num2 = document.getElementById("secondNumber").value;
+	num3 = document.getElementById("thirdNumber").value;
+	document.getElementById("result").innerHTML = num1 * num2 *num3;
+	}
+</script>
+</body>
+</html>
